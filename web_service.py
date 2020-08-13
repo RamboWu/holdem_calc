@@ -9,10 +9,12 @@ def hello_world():
 
 @app.route('/test')
 def test_func():
+    print 'test success'
     return 'test success!'
 
 @app.route('/calc')
 def calc_holdem():
+    print 'calc call success'
     exact = False
     num = 100000
     hole_cards_args = ['Kc', 'Kh', 'Ac', 'Ah']
