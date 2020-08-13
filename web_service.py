@@ -7,6 +7,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
+@app.route('/test')
+def test_func():
+    return 'test success!'
+
 @app.route('/calc')
 def calc_holdem():
     exact = False
